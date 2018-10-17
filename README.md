@@ -7,6 +7,9 @@ Its main intent is class practice during Modern Programming Techniques course.
 ## Tasks to do
 
 - [X] create initial classes
-- [ ] clone this repository
+- [X] clone this repository
 - [ ] add more shapes
+    - [ ] add rhombus
+    - [ ] add trapezoid
+    - [ ] add parallelogram
 - [ ] add drawing of shapes using [https://matplotlib.org/](Matplotlib)
