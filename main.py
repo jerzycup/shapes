@@ -19,6 +19,6 @@ print(tr1.summary())
 
 vec3 = np.array([1, 2])
 
-qu1 = quadrangle.Quadrangle
+qu1 = quadrangle.Quadrangle(vec1, vec2, vec3)
 
 print(qu1.summary())
