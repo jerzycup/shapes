@@ -16,7 +16,7 @@ class Triangle(Shape):
         self.a = a
         self.b = b
         if a.shape != (2,)  or b.shape != (2,):
-            raise ValueError('it has to be 2 dimensional vectors')
+            raise ValueError('Parameters have to be 2 dimensional vectors')
 
     def __str__(self):
         return 'Vectors: {}, and {}'.format(self.a, self.b)
