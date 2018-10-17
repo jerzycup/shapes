@@ -15,6 +15,9 @@ class Rectangle(Shape):
         self.a = a
         self.b = b
 
+    def __str__(self):
+        return '{}, {}'.format(self.a, self.b)
+
     def area(self):
         return self.a * self.b
 
