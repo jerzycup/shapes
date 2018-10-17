@@ -15,3 +15,9 @@ class Triangle(Shape):
         if a.shape != (2,)  or b.shape != (2,):
             raise ValueError('it has to be 2 dimensional vectors')
 
+
+    def area(self):
+        return 0.5 * abs(self.a[0] * self.b[1] - self.a[1] * self.b[0])
+
+    def perimeter(self):
+        return np.linalg.norm(self.a) + np.linalg.norm(self.b) + np.linalg.norm(np.add(self.a, -self.b))
