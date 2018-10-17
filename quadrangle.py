@@ -12,7 +12,8 @@ class Quadrangle(Shape):
     b = None
     c = None
 
-    def __str__(self):
+    def __str__(self, a, b, c):
+        super().__init__()
         self.a = a
         self.b = b
         self.c = c
