@@ -16,6 +16,7 @@ class Parallelogram(Shape):
     fi = None
 
     def __init__(self, a, b, fi):
+        super().__init__()
         rad = 2 * np.pi / 360
         self.a = a
         self.b = b
