@@ -9,7 +9,7 @@ Its main intent is class practice during Modern Programming Techniques course.
 - [X] create initial classes
 - [X] clone this repository
 - [ ] add more shapes
-    - [ ] add rhombus
-    - [ ] add trapezoid
-    - [ ] add parallelogram
+    - [O] add rhombus, note:
+    - [X] add trapezoid
+    - [X] add parallelogram
 - [ ] add drawing of shapes using [https://matplotlib.org/](Matplotlib)
