@@ -8,6 +8,10 @@ import parallelogram
 import trapezoid
 import rhombus
 
-shape = trapezoid.Trapezoid(5, 2, 60, 30)
+vec1 = np.array([2, 2])
+vec2 = np.array([-1, 1])
 
-print(shape.summary())
+shape = triangle.Triangle(vec1, vec2)
+
+
+print(shape.draw())

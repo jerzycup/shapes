@@ -1,8 +1,8 @@
 # coding: utf8
-from shape import Shape
+from parallelogram import Parallelogram
 
 
-class Rectangle(Shape):
+class Rectangle(Parallelogram):
     """
     Rectangular shape.
     """
@@ -11,24 +11,12 @@ class Rectangle(Shape):
     b = None
 
     def __init__(self, a, b):
-        super().__init__()
-        self.a = a
-        self.b = b
+        super().__init__(a, b, 90)
 
-    def __str__(self):
-        return '{}, {}'.format(self.a, self.b)
-
-    def area(self):
-        return self.a * self.b
-
-    def perimeter(self):
-        return 2 * (self.a + self.b)
-
-
-class Square(Rectangle):
+class Square(Parallelogram):
     """
     Square shape as a specific rectangle.
     """
 
     def __init__(self, a):
-        super().__init__(a, a)
+        super().__init__(a, a, 90)

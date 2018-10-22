@@ -8,8 +8,10 @@ Its main intent is class practice during Modern Programming Techniques course.
 
 - [X] create initial classes
 - [X] clone this repository
-- [ ] add more shapes
-    - [O] add rhombus, note:
+- [X] add more shapes
+    - [X] add rhombus, note:
     - [X] add trapezoid
     - [X] add parallelogram
-- [ ] add drawing of shapes using [https://matplotlib.org/](Matplotlib)
+- [X] add drawing of shapes using [https://matplotlib.org/](Matplotlib)
+
+- [ ] add apexes (note: need to make circle be full visible on graph)

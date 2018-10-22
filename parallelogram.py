@@ -25,3 +25,9 @@ class Parallelogram(Shape):
             raise ValueError('angle cannot be bigger than 180°')
         if a <= 0 or b <= 0:
             raise ValueError('lengths of sides and bases have to be positive')
+
+    def area(self):
+        return self.a * self.b * np.sin(self.fi)
+
+    def perimeter(self):
+        return 2 * self.a + 2 * self.b

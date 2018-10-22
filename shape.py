@@ -1,4 +1,5 @@
 # coding: utf8
+from matplotlib import pyplot as plt
 
 
 class Shape(object):
@@ -25,6 +26,17 @@ class Shape(object):
             'perimeter': self.perimeter()
         }
 
+    def apex(self):
+        '''
+        Abstract method of finding apexes
+        '''
+
     def draw(self):
-        pass
+        '''
+        Returns a plot
+        '''
+        data = self.apex()
+        x, y = data.T
+        plt.plot(x, y, '-')
+        plt.show()
 
