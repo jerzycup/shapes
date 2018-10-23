@@ -34,4 +34,6 @@ class Circle(Shape):
         fig, ax = plt.subplots()
         ax.add_artist(circle)
         ax.axis('scaled')
+        ax.axis([-1.1 * self.r, 1.1 * self.r, -1.1 * self.r, 1.1 * self.r])
+
         plt.show()

@@ -38,5 +38,7 @@ class Shape(object):
         data = self.apex()
         x, y = data.T
         plt.plot(x, y, '-')
+        plt.axis('scaled')
         plt.show()
+
 

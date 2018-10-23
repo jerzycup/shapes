@@ -31,3 +31,13 @@ class Parallelogram(Shape):
 
     def perimeter(self):
         return 2 * self.a + 2 * self.b
+
+    def apex(self):
+        x0 = np.array([0,0])
+        x1 = np.array([self.a, 0])
+        x2 = np.array([self.a + self.b * np.cos(self.fi), self.b * np.sin(self.fi)])
+        x3 = np.array([x2[0] - self.a, x2[1]])
+
+        x = np.array([x0, x1, x2, x3, x0])
+
+        return x
