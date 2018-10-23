@@ -22,7 +22,7 @@ class Trapezoid(Shape):
         self.b = b
         self.fi = fi * rad
         self.theta = theta * rad
-        self.h = abs(a - b)/(1/np.tan(fi) + 1/np.tan(theta))
+        self.h = abs(a - b)/(1/np.tan(self.fi) + 1/np.tan(self.theta))
         if fi >= 180 or theta >= 180:
             raise ValueError('angles cannot be bigger than 180°')
         if a <= 0 or b <= 0:

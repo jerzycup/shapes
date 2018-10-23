@@ -14,4 +14,4 @@ Its main intent is class practice during Modern Programming Techniques course.
     - [X] add parallelogram
 - [X] add drawing of shapes using [https://matplotlib.org/](Matplotlib)
 
-- [ ] add apexes (note: need to make circle be full visible on graph)
+- [X] add apexes
