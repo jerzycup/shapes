@@ -34,9 +34,11 @@ class Trapezoid(Shape):
     def __str__(self):
         return 'Bases: {}, {}, Angles: {}, {}, Height: {}'.format(self.a, self.b, self.fi, self.theta, self.h)
 
+    @property
     def area(self):
         return 0.5 * (self.a + self.b) * self.h
 
+    @property
     def perimeter(self):
         return self.a + self.b + self.h/np.sin(self.fi) + self.h/np.sin(self.theta)
 

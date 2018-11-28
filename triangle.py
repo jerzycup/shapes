@@ -23,9 +23,11 @@ class Triangle(Shape):
     def __str__(self):
         return 'Vectors: {}, and {}'.format(self.a, self.b)
 
+    @property
     def area(self):
         return 0.5 * abs(self.a[0] * self.b[1] - self.a[1] * self.b[0])
 
+    @property
     def perimeter(self):
         return np.linalg.norm(self.a) + np.linalg.norm(self.b) + np.linalg.norm(np.add(self.a, -self.b))
 

@@ -20,9 +20,11 @@ class Circle(Shape):
     def __str__(self):
         return self.r
 
+    @property
     def area(self):
         return np.pi * self.r**2
 
+    @property
     def perimeter(self):
         return 2 * np.pi * self.r
 

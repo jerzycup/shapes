@@ -75,9 +75,11 @@ class Quadrangle(Shape):
     def __str__(self):
         return 'Vectors: {}, {}, {}, {}'.format_map(self.a, self.b, self.c, self.d)
 
+    @property
     def area(self):
         return 0.5 * abs(self.a[0] * self.b[1] - self.a[1] * self.b[0]) + 0.5 * abs((self.c[0] * self.d[1] - self.c[1] * self.d[0]))
 
+    @property
     def perimeter(self):
         return np.linalg.norm(self.a) + np.linalg.norm(self.b) + np.linalg.norm(self.c) + np.linalg.norm(self.d)
 
